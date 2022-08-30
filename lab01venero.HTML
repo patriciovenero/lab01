@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICA</title>
+
+    <link rel="stylesheet" href="STYLES.CSS">
+</head>
+<body>
+    <table border="0">
+    <form>
+        <div id="prins">
+            <h1>Travel Autorization Form</h1>
+        </div>
+        <br>
+
+        <div>
+            <h2>Sección A: Información del cliente</h2>
+            <hr>
+        </div>
+
+        <table border="0">
+            <p>
+            <tr>
+                <td>Cargo:</td>
+                <td><input type="text" name="cargo" id="cargo"></td>
+            </tr>
+
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="cargo" id="cargo"></td>
+            </tr>
+            
+            <tr>
+                <td>Primer Apellido:</td>
+                <td><input type="text" name="primerape" id="primerape"></td>
+            </tr>
+
+            <tr>
+                <td>Segundo Apellido:</td>
+                <td><input type="text" name="segundoape" id="segundoape"></td>
+            </tr>
+
+            <tr>
+                <td for="email">Correo electrónico:</td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+
+            <tr>
+                <td for="teléfono">Número de teléfono:</td>
+                <td><input type="text" name="numerotel" id="numbertel"></td>
+            </tr>
+            </p>
+        </table>
+        <br>
+
+        <div>
+            <h2>Sección B: Información del viaje</h2>
+            <hr>
+        </div>
+
+        <table border="0">
+            <p>
+            <tr>
+                <td for="nombreaer">Nombre de la aerolinea:</td>
+                    <td><select name="seleccion" id="sel">
+                        <option value="selecciona">Selecciona una aerolinea</option>
+                        <option value="ATSA">ATSA</option>
+                        <option value="VIVA-AIR">VIVA-AIR</option>
+                        <option value="STAR-PERU">STAR-PERU</option>
+                    </select>
+                    <td>Gastos adicionales estimados</td>
+                </td>
+            </tr>
+
+            <tr>
+                <td for="destino">Destino:</td>
+                <td><input type="text" name="destino" id="destino"></td>
+                <td for="Alquiler_coche">Alquiler de coche</td>
+                <td><input type="text" name="Alquiler_coche" id="Alquiler_coche"></td>
+            </tr>
+
+            <tr>
+                <td for="Fecha_de_salida">Fecha de Salida</td>
+                <td><input type="date" name="Fecha_de_salida" id="Fecha_de_salida"></td>
+                <td for="Hotel">Hotel</td>
+                <td><input type="text" name="Hotel" id="Hotel"></td>
+            </tr>
+
+            <tr>
+                <td for="Fecha_de_regreso">Fecha de Regreso</td>
+                <td><input type="date" name="Fecha_de_regreso" id="Fecha_de_regreso"></td>
+                <td for="Comidas">Comidas</td>
+                <td><input type="text" name="Comidas" id="Comidas"></td>
+            </tr>
+
+            <tr>
+                <td for="Coste_estimado">Coste Estimado</td>
+                <td><input type="text" name="Coste_estimado" id="Coste_estimado"></td>
+                <td for="Total_estimado">Total estimado</td>
+                <td><input type="text" name="Total_estimado" id="Total_estimado" placeholder="0,00€"></td>
+            </tr>
+
+            <tr>
+                <td for="Incluye_cliente">¿Incluye la vista al cliente?</td>
+                <td><input type="checkbox" name="Incluye_cliente" id="Incluye_cliente"></td>            
+                <td for="Metodo_pago">Metodos de pago utilizado:
+                    <br/>
+                    <input type="radio" name="Metodo" value="Metálico" checked="">Metálico<br/>
+                    <input type="radio" name="Metodo" value="Tarjeta" checked="">Tarjeta de crédito<br/>
+                    <input type="radio" name="Metodo" value="Cheque" checked="">Cheque<br/>
+                </td>
+            </tr>
+            </p>
+            </table>
+            
+            <p id="caja">
+                <label for="caja" id="caja">Proposito del viaje:</label><br/>
+                <textarea id="caja" name="caja"></textarea>
+            </p>
+
+            <p>
+                <button>Enviar</button>
+            </p>
+        </table>
+    </table>
+    </form>
+</body>
+</html>
